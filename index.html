@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Web site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width">
+    
+    <!-- Подключение bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">     
+
+    <link rel="stylesheet" type="text/css" href="css/indxcss.css">
+
+</head>
+<body>
+ <div id= "header" >
+ </div>
+ <div id = "logo">
+        <h2 ><b>Тест</b></h2>
+ </div>
+ 
+ <div id="error">
+        <p id="etxt"> </p>
+ </div>
+
+<div id="content" class="row" >
+        <div id="inputs" class="col-md-7">
+                <form role="form" id="formforreg"> 
+                        <div class="form-group " title="Не мение 5 мимволов" data-toggle="tooltip" >
+                                <input type="text"  placeholder="Логин"  class=" fild form-control" id= "logr" >
+                        </div>
+                        <div class="form-group" title="Не мение 5 мимволов" data-toggle="tooltip"><input type="password" placeholder="Пароль" class=" fild form-control" id="passr" ></div>
+                        <div class="form-group" title="Пароли должны совпадать" data-toggle="tooltip"><input type="password" placeholder="Повторите пароль" class=" fild form-control" id="passrc" ></div>
+                        <div class="form-group" title="Введите свое имя" data-toggle="tooltip"><input type="text" placeholder="Имя"  class="fild form-control" id="namer" ></div>
+                        <div class="form-group" title="Введите свою фамилию"data-toggle="tooltip"><input type="text" placeholder="Фамилия" class="fild form-control" id="surr"></div>
+                        <div class="form-group" title="Введите E-mail" data-toggle="tooltip"><input type="text" placeholder="E-mail" class="fild form-control" id="mailr" ></div>
+                        <div class="form-group"><input type="button" value="Зарегестрироватся" class="btn fild"  id="butforreg" ></div>
+                </form>
+
+                <form role="form" id="formforlog">
+                        <div class="form-group" title="Введите логин" data-toggle="tooltip" ><input type="text" placeholder="Логин"  class="fild form-control" id="log"></div>
+                        <div class="form-group" title="Введите пароль" data-toggle="tooltip"><input type="password" placeholder="Пароль" class="fild form-control" id="pass" ></div>
+                        <div class="form-group"><input type="button" value="Войти" class="fild btn"  id="butforlog"></div>
+                </form>
+                
+                
+        </div>
+        <div id="menu" class="col-md-5" >  
+                        <div  class="loginin"><p>Вход</p></div>
+                        <div class="singup" ><p>Регестрация</p> </div>
+        </div>
+
+</div> 
+
+<script src = "jquery/jquery-3.3.1.min.js"></script>\
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="css/tips.js" ></script>   
+
+<!-- Фунцкианал кнопки регестрации/авторизации -->
+<script src="form/log.js" ></script>
+<script src="form/reg.js" ></script>
+
+<!-- Закрытия окна уведомлений об ошибке -->
+<script src="form/errorhide.js" ></script>     
+
+<!-- Переключение регестрации/авторизации -->
+<script src="form/main.js" ></script>
+ 
+</body>
+
+</html>

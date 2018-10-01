@@ -1,0 +1,9 @@
+<?php
+session_start();
+if(empty($_SESSION["login"]))
+        echo("<script>location.href='index.html';</script>");
+    unset($_SESSION['login']);
+    unset($_SESSION['id']);
+    session_destroy();
+    echo("<script>location.href='index.html';</script>");
+?>
